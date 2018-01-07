@@ -1,0 +1,8 @@
+
+@media screen and (min-width: 768px) {
+#content_0_0:before { position: relative }
+#content_0_0 { text-align: center; height: 100vh }
+#content_0_0-wrapper { width: 400px; margin: auto }
+#nav_0_0 { position: fixed }
+#content_9_0 { height: 500px }
+}

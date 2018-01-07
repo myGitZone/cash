@@ -1,0 +1,127 @@
+.imagine-wrapper {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url('./images/imagine.jpg');
+        background-size: cover; // background-attachment: fixed;
+        background-position: center;
+    }
+    .imagine-container {
+        position: relative;
+        top: 0;
+        width: 100%;
+        max-width: 1200px;
+        height: 100%;
+        margin: auto;
+        h1 {
+            text-align: center;
+            position: relative;
+            top: 15%;
+            font-size: 35px;
+            font-weight: 700;
+            margin: auto;
+            .left-color {
+                display: inline-block;
+                height: 10px;
+                width: 100px;
+                background: #2B4F45;
+            }
+            .right-color {
+                display: inline-block;
+                height: 10px;
+                width: 100px;
+                background: #1F8C23;
+            }
+        }
+        ul {
+            position: relative;
+            top: 25%;
+            padding: 20px 0;
+            li {
+                width: 33.33%;
+                padding: 0 4%;
+                display: inline-block;
+                text-align: center;
+                .segmenting-line {
+                    position: absolute;
+                    border-left: 1px solid rgb(209, 205, 205);
+                    height: 100%;
+                    width: 1px;
+                    margin-left: -48px;
+                }
+                &.queue-anim-leaving {
+                    position: relative !important;
+                }
+                .icon {
+                    width: 100px;
+                    height: 100px;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+                h3 {
+                    line-height: 32px;
+                    margin: 10px auto;
+                }
+            }
+        }
+        .btn-container {
+          margin-top: 160px;
+          text-align: center;
+          .apply-now-btn {
+              background: #2B4F45;
+              border-color: #2B4F45;
+              height: 40px;
+              width: 150px;
+          }
+          .apply-now-btn:active {
+              background-color: rgb(20, 110, 85);
+              border-color: rgb(20, 110, 85);
+          }
+      }
+    }
+}
+@media screen and (max-width: 767px) {
+  .imagine-wrapper {
+      height: 900px;
+      .imagine-container {
+          width: 90%;
+          max-width: 100%;
+          h1 {
+              top: auto;
+              margin: 40px auto 20px;
+          }
+          ul {
+              top: auto;
+              padding: 0;
+              li {
+                  .segmenting-line {
+                      display: none;
+                  }
+                  width: 100%;
+                  max-width: 250px;
+                  display: block;
+                  margin: 20px auto 40px;
+                  padding: 0;
+              }
+          }
+          .btn-container {
+              margin: 0;
+          }
+      }
+  }
+}

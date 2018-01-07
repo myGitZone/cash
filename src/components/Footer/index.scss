@@ -1,0 +1,38 @@
+.smart-footer {
+    height: 100px;
+    margin: 0 200px;
+    border-top: 2px solid hsl(182, 100%, 50%);
+    line-height: 100px;
+    text-align: center;
+    img {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .smart-footer {
+        height: 100px;
+        margin: 0 200px;
+        border-top: 2px solid #00f7ff;
+        line-height: 100px;
+        text-align: center;
+        img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        .second-img {
+            margin-top: 60px;
+        }
+        .third-img {
+            margin-top: 120px;
+        }
+        .fouth-img {
+            margin-top: 180px;
+        }
+        .fifth-img {
+            margin-top: 240px;
+        }
+    }
+}

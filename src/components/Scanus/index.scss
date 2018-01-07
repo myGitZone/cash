@@ -1,0 +1,27 @@
+.scan-us {
+    height: 220px;
+    padding: 50px;
+    font-size: 18px;
+    text-align: center;
+    .scan-container {
+        display: inline-block;
+        span {
+            vertical-align: top;
+            color: #2B4F45;
+            margin-right: 20px;
+        }
+        .phone-container {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        img {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .scan-container {
+        display: block;
+    }
+}
